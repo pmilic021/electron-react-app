@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import electron from 'electron';
+const shell  = electron.shell;
+
 class App extends Component {
   render() {
     return (
@@ -12,7 +15,7 @@ class App extends Component {
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
-          <a href="www.google.com">google.com</a>
+          <button onClick={() => shell.openExternal('https://github.com')}>google.com</button>
         </p>
       </div>
     );
