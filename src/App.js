@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import electron from 'electron';
+const electron = window.require ? window.require('electron') : {};
 const shell  = electron.shell;
 
 class App extends Component {
