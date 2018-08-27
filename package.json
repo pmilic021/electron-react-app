@@ -10,9 +10,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "electron": "electron .",
-    "electron-start": "node src/electron-wait-react",
+    "electron-start": "node electron-wait-react",
     "react-start": "react-scripts start",
-    "package": "electron-packager . test-electron-app --overwrite --ignore .gitignore --ignore .vscode --ignore node_modules --ignore package-lock.json --ignore Procfile --ignore README.md --ignore src",
+    "package": "electron-packager . test-electron-app --overwrite --ignore electron-wait-react --ignore .gitignore --ignore .vscode --ignore node_modules --ignore package-lock.json --ignore Procfile --ignore README.md --ignore src",
     "build-package": "npm run build && npm run package"
   },
   "dependencies": {
